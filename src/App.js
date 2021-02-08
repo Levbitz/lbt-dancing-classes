@@ -16,9 +16,8 @@ function App() {
     <Router History={History}>
       <Navigationbar />
       <Switch>
-        <Route exact path="/">
-          <Home />
-        </Route>
+        <Route exact path="/" component={Home} />
+
         <Route path="/about-us" component={About} />
 
         <Route path="/contact-us" component={Contact} />
@@ -28,6 +27,7 @@ function App() {
         <Route path="/our-history" component={OurHistory} />
 
         <Route path="/our-team" component={OurTeam} />
+        <Route component={OurTeam} />
       </Switch>
     </Router>
   );

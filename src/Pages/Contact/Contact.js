@@ -4,7 +4,7 @@ import "./Contact.css";
 function Contact() {
   return (
     <div className="contact_wrapper">
-      <h2>Contact Us</h2>
+      <h2>Contact Us bro</h2>
     </div>
   );
 }

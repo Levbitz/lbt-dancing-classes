@@ -10,6 +10,7 @@ import {
   DropdownToggle,
   DropdownMenu,
   DropdownItem,
+  NavLink,
 } from "reactstrap";
 
 import { Link } from "react-router-dom";
@@ -23,40 +24,106 @@ const Navigationbar = (props) => {
   const toggle = () => setIsOpen(!isOpen);
 
   return (
-    <Navbar light expand="md" className="navbar_wrapper">
-      <NavbarBrand href="/">reactstrap</NavbarBrand>
+    <Navbar light expand="md" className="my__Navavigation ">
+      <NavbarBrand href="/">
+        <img
+          width="200"
+          src="https://levbitz.com/main-assets/img/logo.png"
+          alt=""
+          srcset=""
+        />
+      </NavbarBrand>
       <NavbarToggler onClick={toggle} className="navbar_btn" />
       <Collapse isOpen={isOpen} navbar>
         <Nav className="ml-auto" navbar>
           <NavItem className="nav_item">
-            <Link className="nav_link" to="/">
-              Home
-            </Link>
+            <NavLink>
+              <Link
+                className="nav_link"
+                to="/"
+                onClick={() => {
+                  setIsOpen(!isOpen);
+                }}
+              >
+                Home
+              </Link>
+            </NavLink>
           </NavItem>
           <NavItem className="nav_item">
-            <Link to="/about-us">About</Link>
+            <NavLink>
+              <Link
+                to="/about-us"
+                className="nav_link"
+                onClick={() => {
+                  setIsOpen(!isOpen);
+                }}
+              >
+                About
+              </Link>
+            </NavLink>
           </NavItem>
 
           <UncontrolledDropdown nav inNavbar>
-            <DropdownToggle nav caret className="nav_item">
+            <DropdownToggle
+              style={{ color: "#fff" }}
+              nav
+              caret
+              className="nav_item   "
+            >
               Our Orginisation
             </DropdownToggle>
             <DropdownMenu right className="mydrown">
-              <DropdownItem>
-                <Link to="/our-team">our team</Link>
+              <DropdownItem className="dropdown_wrapper">
+                <Link
+                  className="dropdown_item"
+                  to="/our-team"
+                  onClick={() => {
+                    setIsOpen(!isOpen);
+                  }}
+                >
+                  our team
+                </Link>
               </DropdownItem>
-              <DropdownItem>
-                <Link to="/our-history">Our History</Link>
+              <DropdownItem className="dropdown_wrapper">
+                <Link
+                  className="dropdown_item"
+                  to="/our-history"
+                  onClick={() => {
+                    setIsOpen(!isOpen);
+                  }}
+                >
+                  Our History
+                </Link>
               </DropdownItem>
             </DropdownMenu>
           </UncontrolledDropdown>
 
           <NavItem className="nav_item">
-            <Link to="/contact-us">Contact</Link>
+            <NavLink>
+              <Link
+                className="nav_link"
+                to="/contact-us"
+                onClick={() => {
+                  setIsOpen(!isOpen);
+                }}
+              >
+                Contact
+              </Link>
+            </NavLink>
           </NavItem>
 
           <NavItem className="nav_item">
-            <Link to="/my-account">Account</Link>
+            <NavLink>
+              <Link
+                className="nav_link"
+                to="/my-account"
+                onClick={() => {
+                  setIsOpen(!isOpen);
+                }}
+              >
+                Account
+              </Link>
+            </NavLink>
           </NavItem>
         </Nav>
       </Collapse>

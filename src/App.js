@@ -9,11 +9,10 @@ import Contact from "./Pages/Contact/Contact";
 import Account from "./Pages/Account/Account";
 import OurHistory from "./Pages/OurHistory/OurHistory";
 import OurTeam from "./Pages/OurTeam/OurTeam";
-import History from "./services/History";
 
 function App() {
   return (
-    <Router History={History}>
+    <Router>
       <Navigationbar />
       <Switch>
         <Route exact path="/" component={Home} />

@@ -1,16 +1,29 @@
+.my__Navavigation {
+  position: fixed;
+  width: 100% !important;
+  background: indigo;
+
+  /* background-color: #222222;
+  text-transform: uppercase; */
+}
+
+/* prev */
 .nav_item {
   margin-right: 30px;
   height: 50px;
+  z-index: 999px;
+  z-index: 100 !important;
 }
 
 .nav_link {
   margin-top: 200px !important;
   color: #fff;
+  z-index: 999px;
 }
 
 .nav_item:hover {
   border-bottom: 2px coral solid;
-  color: black;
+  color: black !important;
 }
 
 .navbar_btn {
@@ -21,6 +34,21 @@
 .mydrown {
   border: none;
   background: none;
+  background-color: indigo;
+}
+
+.dropdown_wrapper {
+  background: none;
+}
+.dropdown_wrapper :hover {
+  background: none;
+}
+
+.dropdown_item {
+  color: #fff;
+}
+.dropdown_item :hover {
+  background: none !important;
 }
 
 .navbar_wrapper {

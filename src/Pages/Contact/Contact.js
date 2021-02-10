@@ -1,8 +1,9 @@
 import React from "react";
+import "./Contact.css";
 
 function Contact() {
   return (
-    <div>
+    <div className="contact_wrapper">
       <h2>Contact Us</h2>
     </div>
   );

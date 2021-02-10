@@ -1,8 +1,9 @@
 import React from "react";
+import "./OurHistory.css";
 
 function OurHistory() {
   return (
-    <div>
+    <div className="ourHistory_wrapper">
       <h2>Our History</h2>
     </div>
   );

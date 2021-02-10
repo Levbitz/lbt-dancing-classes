@@ -1,16 +1,16 @@
-.home_wrapper {
+.team_wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
   min-height: 80vh;
-  background-image: url(../../assets/images/home.webp);
+  background-image: url(../../assets/images/05.webp);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   min-height: 100vh;
 }
 
-.home_wrapper h2 {
+.team_wrapper h2 {
   font-size: 60px;
-  color: black;
+  color: white;
 }

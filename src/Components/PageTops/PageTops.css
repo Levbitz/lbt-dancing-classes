@@ -1,0 +1,43 @@
+.tops_wrapper {
+  height: 450px;
+  padding-top: 200px;
+  background: #4527a0;
+}
+
+@media only screen and (max-width: 720px) {
+  .tops_wrapper {
+    height: 250px;
+    padding-top: 150px;
+    background: #4527a0;
+  }
+}
+
+.tops_title {
+  color: #fff;
+
+  text-align: center;
+  font-size: 40px;
+}
+
+@media only screen and (max-width: 720px) {
+  .tops_title {
+    color: #fff;
+
+    text-align: center;
+    font-size: 25px;
+  }
+}
+
+.tops_paragraphs {
+  color: #fff;
+  margin-top: 30px;
+  text-align: center;
+}
+
+@media only screen and (max-width: 720px) {
+  .tops_paragraphs {
+    color: #fff;
+    margin-top: 10px;
+    text-align: center;
+  }
+}

@@ -1,0 +1,9 @@
+.about_content {
+  padding: 30px;
+}
+
+@media only screen and (max-width: 600px) {
+  .about_content {
+    display: block;
+  }
+}

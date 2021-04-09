@@ -9,10 +9,13 @@ import Contact from "./Pages/Contact/Contact";
 import Account from "./Pages/Account/Account";
 import OurHistory from "./Pages/OurHistory/OurHistory";
 import OurTeam from "./Pages/OurTeam/OurTeam";
+import Footer from "./Components/Footer/Footer";
+import ScrollToTop from "./Components/ScrollTop/ScrollTop";
 
 function App() {
   return (
     <Router>
+      <ScrollToTop />
       <Navigationbar />
       <Switch>
         <Route exact path="/" component={Home} />
@@ -28,6 +31,7 @@ function App() {
         <Route path="/our-team" component={OurTeam} />
         <Route component={OurTeam} />
       </Switch>
+      <Footer />
     </Router>
   );
 }

@@ -1,22 +1,24 @@
-# Getting Started with Create React App
+# name
 
 react nav_bar with reactstrap made by Levson of levbitz.com
 
-## Available Scripts
+# author
 
-In the project directory, you can run:
+wafula levson samuel of Levbitz
 
-### `yarn start`
+# author
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+website [https://levbitz.com/]
+facebook page [https://www.facebook.com/levbitz]
+facebook twitter [https://twitter.com/levbitz]
+youtube channel [https://www.youtube.com/channel/UCl4ppoHFF1ew0NbgbMCS94A]
+instagram [https://www.instagram.com/levbitz/]
+linkedin [https://www.linkedin.com/in/levson-of-levbitz-7262a9200/]
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+# depencencies use
 
-### `yarn test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `yarn build`
+**\*\*** react router [https://reactrouter.com/] **\*\***
+**\*\*** reactstrap [https://reactstrap.github.io/] **\*\***
+**\*\*** react icons [https://react-icons.github.io/react-icons/] **\*\***
+**\*\*** react router [https://reactrouter.com/] **\*\***
+**\*\*** react [https://reactjs.org/] **\*\***

@@ -1,0 +1,41 @@
+.subscription_wrapper {
+  background: #4527a0;
+  padding: 50px;
+}
+
+.subcription_container {
+  margin: 50px;
+}
+
+@media only screen and (max-width: 600px) {
+  .subcription_container {
+    margin: 0px;
+  }
+}
+
+.subscription_input_wrapper {
+  width: 700px;
+  margin: auto;
+}
+
+@media only screen and (max-width: 600px) {
+  .subscription_input_wrapper {
+    width: 100% !important;
+    margin: auto;
+  }
+}
+
+.subscription_input {
+  height: 50px;
+  outline: none;
+  border: none;
+}
+
+.subscription_btn {
+  background: #1a237e;
+  outline: #1a237e;
+  color: #fff;
+}
+.subscription_btn:hover {
+  cursor: pointer;
+}

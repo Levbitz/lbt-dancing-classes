@@ -6,17 +6,26 @@ import {
   NavbarBrand,
   Nav,
   NavItem,
+  NavLink,
   UncontrolledDropdown,
   DropdownToggle,
   DropdownMenu,
   DropdownItem,
-  NavLink,
+  NavbarText,
 } from "reactstrap";
+// //css
+import "./Navigationbar.css";
+
+//icons
+import {
+  FaFacebookF,
+  FaYoutube,
+  FaLinkedinIn,
+  FaTwitter,
+  FaBattleNet,
+} from "react-icons/fa";
 
 import { Link } from "react-router-dom";
-
-//css
-import "./Navigationbar.css";
 
 const Navigationbar = (props) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -24,40 +33,40 @@ const Navigationbar = (props) => {
   const toggle = () => setIsOpen(!isOpen);
 
   return (
-    <Navbar light expand="md" className="my__Navavigation ">
-      <NavbarBrand href="/">
-        <img
-          width="200"
-          src="https://levbitz.com/main-assets/img/logo.png"
-          alt=""
-          srcset=""
-        />
+    <Navbar
+      light
+      expand="md"
+      className="my__Navavigation blue darken-3  active"
+    >
+      <NavbarBrand>
+        <Link className="mylogo" to="/">
+          <FaBattleNet className="icon" color={"#fff"} />
+          ROCK-UP
+        </Link>
       </NavbarBrand>
-      <NavbarToggler onClick={toggle} className="navbar_btn" />
+      <NavbarToggler onClick={toggle} className="toggle_btn" />
       <Collapse isOpen={isOpen} navbar>
-        <Nav className="ml-auto" navbar>
-          <NavItem className="nav_item">
-            <NavLink>
-              <Link
-                className="nav_link"
-                to="/"
-                onClick={() => {
-                  setIsOpen(!isOpen);
-                }}
-              >
+        <Nav className="mx-auto" navbar>
+          <NavItem className="nav_item_wrapper">
+            <NavLink
+              className="nav_item"
+              onClick={() => {
+                setIsOpen(false);
+              }}
+            >
+              <Link className="nav_link" to="/">
                 Home
               </Link>
             </NavLink>
           </NavItem>
-          <NavItem className="nav_item">
-            <NavLink>
-              <Link
-                to="/about-us"
-                className="nav_link"
-                onClick={() => {
-                  setIsOpen(!isOpen);
-                }}
-              >
+          <NavItem className="nav_item_wrapper">
+            <NavLink
+              className="nav_item"
+              onClick={() => {
+                setIsOpen(false);
+              }}
+            >
+              <Link className="nav_link" to="/about-us">
                 About
               </Link>
             </NavLink>
@@ -68,7 +77,7 @@ const Navigationbar = (props) => {
               style={{ color: "#fff" }}
               nav
               caret
-              className="nav_item   "
+              className="nav_item"
             >
               Our Orginisation
             </DropdownToggle>
@@ -78,7 +87,7 @@ const Navigationbar = (props) => {
                   className="dropdown_item"
                   to="/our-team"
                   onClick={() => {
-                    setIsOpen(!isOpen);
+                    setIsOpen(false);
                   }}
                 >
                   our team
@@ -89,7 +98,7 @@ const Navigationbar = (props) => {
                   className="dropdown_item"
                   to="/our-history"
                   onClick={() => {
-                    setIsOpen(!isOpen);
+                    setIsOpen(false);
                   }}
                 >
                   Our History
@@ -98,34 +107,44 @@ const Navigationbar = (props) => {
             </DropdownMenu>
           </UncontrolledDropdown>
 
-          <NavItem className="nav_item">
-            <NavLink>
-              <Link
-                className="nav_link"
-                to="/contact-us"
-                onClick={() => {
-                  setIsOpen(!isOpen);
-                }}
-              >
+          <NavItem className="nav_item_wrapper">
+            <NavLink
+              className="nav_item"
+              href={"#"}
+              onClick={() => {
+                setIsOpen(false);
+              }}
+            >
+              <Link className="nav_link" to="/contact-us">
                 Contact
               </Link>
             </NavLink>
           </NavItem>
-
-          <NavItem className="nav_item">
-            <NavLink>
-              <Link
-                className="nav_link"
-                to="/my-account"
-                onClick={() => {
-                  setIsOpen(!isOpen);
-                }}
-              >
+          <NavItem className="nav_item_wrapper">
+            <NavLink
+              href={"#"}
+              onClick={() => {
+                setIsOpen(false);
+              }}
+            >
+              <Link className="nav_link" to="my-account">
                 Account
               </Link>
             </NavLink>
           </NavItem>
         </Nav>
+        <NavbarText>
+          <FaFacebookF color={"#FFF"} className="nav_social" />
+        </NavbarText>
+        <NavbarText>
+          <FaYoutube color={"#FFF"} className="nav_social" />
+        </NavbarText>
+        <NavbarText className="nav_social">
+          <FaLinkedinIn color={"#FFF"} className="nav_social" />
+        </NavbarText>
+        <NavbarText>
+          <FaTwitter color={"#FFF"} className="nav_social" />
+        </NavbarText>
       </Collapse>
     </Navbar>
   );

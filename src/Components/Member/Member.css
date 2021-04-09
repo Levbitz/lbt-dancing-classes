@@ -1,0 +1,23 @@
+.member_card {
+  padding: 50px;
+
+  transition: transform 0.5s, filter 1.5s ease-in-out;
+
+  filter: grayscale(0);
+  width: 200px;
+
+  margin: 0 auto;
+}
+
+@media only screen and (max-width: 720px) {
+  .member_card {
+    padding: 0px;
+    width: 80%;
+    margin: 30px auto;
+  }
+}
+
+.member_card:hover {
+  filter: grayscale(100%);
+  transform: scale(1.1);
+}
